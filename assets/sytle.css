@@ -1,11 +1,37 @@
+/* style nav bar */
 nav {
+    /* membuat nav tetap pada bagian atas */ 
     position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    /* set background border dan padding agar tidak terlalu mepet */
+    background: #FF6B9D;
+    border-bottom: 3px solid #1A1A2E;
+    padding: 12px 32px;
+    /* setting display menjadi flex */
     display: flex;
+    /* membuat element pada nav sejajar */
     align-items: center;
     justify-content: space-between;
-}
+  }
 
+.nav-logo {
+    font-family: 'Bangers', cursive;
+    font-size: 1.6rem;
+    color: white;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+  
 .nav-links {
     display: flex;
+    /* set jarak jarak antar element */
+    gap: 10px;
     list-style: none;
+}
+  
+/* memberi efek ketika melakukan hover pada link*/
+.nav-links a:hover {
+    background: white;
+    color: black;
 }
